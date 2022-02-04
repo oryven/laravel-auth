@@ -4,7 +4,7 @@
 
 @auth
 <h1>{{ Auth::user() -> name }}</h1>
-
+<a href="{{ route('logout') }}"><button class="logout-button">DISCONNETTITI</button></a>
 @else
 <h1>If you wanne see my site you have to login/register</h1>
 
